@@ -1,4 +1,4 @@
-package com.sih.nhrc.controller;
+package com.sih.nhrc.model;
 
 public class UserSignup {
 	private String name;

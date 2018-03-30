@@ -16,6 +16,7 @@ public class MainController {
 		System.out.println("Hii in controller");
 		System.out.println("Hii hi in controller");
 		System.out.println("Donecfds2");
+		System.out.println("Donecfds2");
 		ModelAndView mv = new ModelAndView("helloworld");
 		mv.addObject("message", message);
 		mv.addObject("name", name);

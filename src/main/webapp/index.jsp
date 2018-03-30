@@ -1,21 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
- 
-pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="${pageContext.request.contextPath}/resources/img/nhrc-logo.jpeg">
+    <link rel="icon" type="image/png" href="${pageContext.request.contextPath}/resources/img/nhrc-logo.jpeg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>National Human Rights Commision</title>
+    <title>Sign Up-NHRC</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!-- Canonical SEO -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="canonical" href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro" />
     
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -25,457 +20,338 @@ pageEncoding="ISO-8859-1"%>
     <link href="${pageContext.request.contextPath}/resources/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="${pageContext.request.contextPath}/resources/css/demo.css" rel="stylesheet" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
-<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-<style>
-
-</style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar" data-color="orange" data-image="../assets/img/sidebar-4.jpg">
-            <!--
-        Tip 1: You can change the colodasdxzxr of the sidebar using: data-color="purple | blue | green | orange | red"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
-            <div class="sidebar-wrapper">
-                <div class="logo">
-                    <a href="#" class="simple-text logo-mini">
-                        <img src="/img/nhrc-logo.jpeg" height="30px" width="30px" />
-                    </a>
-                    <a href="#" class="simple-text logo-normal">
-                        NHRC
-                    </a>
-                </div>
-                <div class="user">
-                    <div class="photo">
-                        <img src="../assets/img/user.png" />
-                    </div>
-                    <div class="info ">
-                        <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-                            <span>User Name
-                                <b class="caret"></b>
-                            </span>
-                        </a>
-                        <div class="collapse" id="collapseExample">
-                            <ul class="nav">
-                                <li>
-                                    <a class="profile-dropdown" href="#pablo">
-                                        <span class="sidebar-mini">MP</span>
-                                        <span class="sidebar-normal">My Profile</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="profile-dropdown" href="#pablo">
-                                        <span class="sidebar-mini">EP</span>
-                                        <span class="sidebar-normal">Edit Profile</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="profile-dropdown" href="#pablo">
-                                        <span class="sidebar-mini">S</span>
-                                        <span class="sidebar-normal">Settings</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <ul class="nav">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./dashboard.html">
-                             <i class="material-icons">home</i>
-                            <p>Home</p>
-                        </a>
-                    </li>
-					<li class="nav-item">
-						<a class="nav-link" data-toggle="collapse" href="#componentsExamples">
-                            <i><img src="../assets/img/jail.png" height="25px" width="25px" /></i>
-							<p>Custodial Deaths
-                                <b class="caret"></b>
-							</p>  
-                        </a>
-                        <div class="collapse " id="componentsExamples">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="./page1.html">
-                                        <span class="sidebar-mini">P</span>
-                                        <span class="sidebar-normal">Police Custody</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="./page2.html">
-                                        <span class="sidebar-mini">J</span>
-                                        <span class="sidebar-normal">Judicial Custody</span>
-                                    </a>
-                                </li>
-                                
-                                
-                            </ul>
-                        </div>
-                    </li>
-					<li class="nav-item">
-						<a class="nav-link" data-toggle="collapse" href="#formsExamples">
-                            <i><img src="../assets/img/police-badge.png" height="25px" width="25px" /></i>
-							<p>Police Excess
-                                <b class="caret"></b>
-							</p>  
-                        </a>
-                        <div class="collapse " id="formsExamples">
-                            <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="./page3.html">
-                                        <span class="sidebar-mini">P</span>
-                                        <span class="sidebar-normal">Police Excess-Torture</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="./page4.html">
-                                        <span class="sidebar-mini">I</span>
-                                        <span class="sidebar-normal">Illegal Detention</span>
-                                    </a>
-                                </li>
-								<li class="nav-item ">
-                                    <a class="nav-link" href="./page5.html">
-                                        <span class="sidebar-mini">F</span>
-                                        <span class="sidebar-normal">False Implication</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="./page6.html">
-                                        <span class="sidebar-mini">O</span>
-                                        <span class="sidebar-normal">Other Police Excess</span>
-                                    </a>
-                                </li>
-                                
-                                
-                            </ul>
-                        </div>
-                    </li>
-					<li class="nav-item ">
-                        <a class="nav-link" href="./page8.html">
-                           <i><img src="../assets/img/guest-house.png" height="25px" width="25px"></i>
-                            <span class="sidebar-normal">Fake Encounter</span>
-                        </a>
-                    </li>
-					<li class="nav-item ">
-                        <a class="nav-link" href="./page9.html">
-                           <i><img src="../assets/img/guest-house.png" height="25px" width="25px"></i>
-                            <span class="sidebar-normal">Case Related to Women / Children</span>
-                        </a>
-                    </li>
-					<li class="nav-item ">
-                        <a class="nav-link" href="./page10.html">
-                           <i><img src="../assets/img/guest-house.png" height="25px" width="25px"></i>
-                            <span class="sidebar-normal">Atrocities on Dalits / Member of Minority Community / Disabled</span>
-                        </a>
-                    </li>
-					<li class="nav-item ">
-                        <a class="nav-link" href="./page11.html">
-                           <i><img src="../assets/img/guest-house.png" height="25px" width="25px"></i>
-                            <span class="sidebar-normal">Bonded Labour</span>
-                        </a>
-                    </li>
-					<li class="nav-item ">
-                        <a class="nav-link" href="./page12.html">
-                           <i><img src="../assets/img/guest-house.png" height="25px" width="25px"></i>
-                            <span class="sidebar-normal">Armed Forces / Para-Military Forces</span>
-                        </a>
-                    </li>
-					<li class="nav-item ">
-                        <a class="nav-link" href="./page13.html">
-                           <i><img src="../assets/img/guest-house.png" height="25px" width="25px"></i>
-                            <span class="sidebar-normal">Other Important Cases</span>
-                        </a>
-                    </li>	 
-                </ul>
-            </div>
-        </div>
-        <div class="main-panel">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <div class="navbar-wrapper">
-                        <div class="navbar-minimize">
-                            <button id="minimizeSidebar" class="btn btn-warning btn-fill btn-round btn-icon d-none d-lg-block">
-                                <i class="fa fa-ellipsis-v visible-on-sidebar-regular"></i>
-                                <i class="fa fa-navicon visible-on-sidebar-mini"></i>
-                            </button>
-                        </div>
-                        <a class="navbar-brand" href="#pablo"> Home </a>
-                    </div>
+    <div class="wrapper wrapper-full-page">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <a class="navbar-brand" href="#pablo">National Human Rights Commission</a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar burger-lines"></span>
                         <span class="navbar-toggler-bar burger-lines"></span>
                         <span class="navbar-toggler-bar burger-lines"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end">
-						<ul class="nav navbar-nav mr-auto">
-                            <form class="navbar-form navbar-left navbar-search-form" role="search">
-                                <div class="input-group">
-                                    <i class="fa fa-search"></i>
-                                    <input type="text" value="" class="form-control" placeholder="Search.sd..">
-                                </div>
-                            </form>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li class="dropdown nav-item">
-                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                    <i class="material-icons">notifications</i>
-                                    <span class="notification">5</span>
-                                    <span class="d-lg-none">Notification</span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Notification 1</a>
-                                    <a class="dropdown-item" href="#">Notification 2</a>
-                                    <a class="dropdown-item" href="#">Notification 3</a>
-                                    <a class="dropdown-item" href="#">Notification 4</a>
-                                    <a class="dropdown-item" href="#">Notification 5</a>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<i class="material-icons">view_list</i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/img/envelope.png"/>  Messages
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/img/help.png"/>  Help Center
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/img/settings.png"/>  Settings
-                                    </a>
-                                    <div class="divider"></div>
-                                    <a href="#" class="dropdown-item text-danger">
-                                        <img src="../assets/img/logout.png"/> Log out
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </nav>
-            <!-- End Navbar -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav">
+                        <!--<li class="nav-item">
+                            <a href="../dashboard.html" class="nav-link">
+                                <i class="nc-icon nc-chart-pie-35"></i> Dashboard
+                            </a>
+                        </li>-->
+                        <li class="nav-item  active ">
+                            <a href="register.html" class="nav-link">
+                                <i class="nc-icon nc-badge"></i> Sign Up
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="login.html" class="nav-link">
+                                <i class="nc-icon nc-mobile"></i> Login
+                            </a>
+                        </li>
+                        <!--<li class="nav-item ">
+                            <a href="lock.html" class="nav-link">
+                                <i class="nc-icon nc-key-25"></i> Lock
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
+        <div class="full-page register-page section-image" data-color="black" data-image="${pageContext.request.contextPath}/resources/img/back_nhrc.jpg">
             <div class="content">
-                <div class="container-fluid">
-					<div class="row">
-                        <div class="col-md-12">
-                            <div class="card strpied-tabled-with-hover">
-                                <div class="card-header ">
-                                    <h4 class="card-title">Guest Room Booking</h4>
-                                    <p class="card-category">Here is a subtitle for this table</p>
+                <div class="container">
+                    <div class="card card-register card-plain text-center">
+                        <div class="card-header ">
+                            <div class="row  justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="header-text">
+                                        <h2 class="card-title">National Human Rights Commission</h2>
+                                        <h4 class="card-subtitle"> ONLINE Human Rights Pledge </h4>
+                                        <hr />
+                                    </div>
                                 </div>
-                                <div class="card-body table-full-width table-responsive">
-									<table id="myTable" class="table table-striped">  
-										<thead>  
-											
-											<tr>  
-												<th>Case Id</th>
-												<th>Year</th>
-												<th>Case Name</th>  
-												<th>Status</th>  
-												<th>Check Status</th>
-																										
-											</tr>
-											
-										</thead>  
-										<tbody>
-											
-											<tr data-toggle="modal" data-id="1" data-target="#orderModal">  
-												<td>001</td>
-												<td>2001</td>												
-												<td>Anusha</td>  
-												<td>India</td>
-												<td>10000</td>
-												
-											</tr>
-											<tr data-toggle="modal" data-id="2" data-target="#orderModal">  
-												<td>001</td>
-												<td>2001</td>
-												<td>Anusha</td>  
-												<td>India</td>  
-												<td>10000</td>  
-											</tr>
-											<tr>  
-												<td>001</td>
-												<td>2001</td>
-												<td>Anusha</td>  
-												<td>India</td>  
-												<td>10000</td>  
-											</tr>
-											<tr data-toggle="modal" data-id="3" data-target="#orderModal">  
-												<td>001</td>
-												<td>2001</td>
-												<td>Anusha</td>  
-												<td>India</td>  
-												<td>10000</td>  
-											</tr>
-											<tr>  
-												<td>001</td>
-												<td>2001</td>
-												<td>Anusha</td>  
-												<td>India</td>  
-												<td>10000</td>  
-											</tr>
-											<tr>  
-												<td>001</td>
-												<td>2001</td>
-												<td>Anusha</td>  
-												<td>India</td>  
-												<td>10000</td>  
-											</tr>
-											<tr>  
-												<td>001</td>
-												<td>2001</td>
-												<td>Anusha</td>  
-												<td>India</td>  
-												<td>10000</td>  
-											</tr>
-											
-										</tbody>  
-									</table>
-                                    
-									<script>
-										$(document).ready(function(){
-											$('#myTable').dataTable();
-										});
-									</script>
-									
-									<div class="modal hide fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h4 class="modal-title" id="myModalLabel">Modal title</h4>
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													
-												</div>
-												<div class="modal-body" id="orderDetails">
-													Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-												</div>
-												<div id="orderItems" class="modal-body" hidden>
-													<h4>Current Status</h4>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn  btn-default btn-simple" data-dismiss="modal">Close</button>
-													<button type="button" id="current_status" class="btn btn-default btn-block" onclick="demo.showNotification('bottom','right')">Check Current Status</button>
-												</div>
-												<script>
-													
-													$(document).ready(function(){
-														$("#current_status").click(function(){
-														$("#orderItems").show();
-														});
-													});
-												</script>
-											</div>
-										</div>
-									</div>
-									<script>
-										$(function(){
-											$('#orderModal').modal({
-												keyboard: true,
-												backdrop: "static",
-												show:false,
-
-											}).on('show', function(){ //subscribe to show method
-												var getIdFromRow = $(event.target).closest('tr').data('id'); //get the id from tr
-												//make your ajax call populate items or what even you need
-												$(this).find('#orderDetails').html($('<b> Order Id selected: ' + getIdFromRow  + '</b>'))
-											});
-										});
-									</script>
-								</div>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-md-5 ml-auto">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="icon">
+                                                <i class="nc-icon nc-circle-09"></i>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4>Create Account</h4>
+                                            <p>Here you can create your account to know about the details of various types of cases and know the current status of those cases.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="icon">
+                                                <i class="nc-icon nc-preferences-circle-rotate"></i>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <!--<h4>Awesome Performances</h4>-->
+                                            <p>There is no provision for membership / registration / affiliation / enrolment of NGOs and individuals with the NHRC. Hence no request on these issues will be entertained by the Commission. </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="icon">
+                                                <i class="nc-icon nc-planet"></i>
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <!--<h4>Global Support</h4>-->
+                                            <p>राष्ट्रीय मानव अधिकार आयोग के साथ गैर सरकारी संगठनों तथा व्यक्तियों की सदस्यता / पंजीकरण / संबंधन / नामांकन हेतु कोई प्रावधान नहीं है। अतः इन विषयों पर किसी प्रकार के आग्रह पर आयोग द्वारा विचार नहीं किया जाऐगा।</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mr-auto">
+                                    <form method="post" action="signup">
+                                        <div class="card card-plain">
+                                            <div class="content">
+                                                <div class="form-group">
+                                                    <input type="email" placeholder="Your Full Name" class="form-control" name="fullname">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" placeholder="Department" class="form-control" name="department">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" placeholder="Designatiom" class="form-control" name="designation">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" placeholder="Enter your email id" class="form-control" name="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" placeholder="Password" class="form-control" name="password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" placeholder="Password Confirmation" class="form-control" name="confpassword">
+                                                </div>
+                                            </div>
+                                            <div class="footer text-center">
+                                                <button type="submit" id="signup" name="signup" class="btn btn-fill btn-neutral btn-wd">Create Account</button>
+                                            </div>
+											<center>
+											<a href="login.html" style="color:white">Already registered ? Login here... </a></center>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        
-            <footer class="footer">
-                <div class="container">
-                    <nav>
-						<ul class="footer-menu">
-                            <li>
-                                <a href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    About us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="copyright text-center">
-                            �
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script>
-                            <a href="#">National Human Rights Commision</a>, New Delhi , India. 
-                        </p>
-                    </nav>
-                </div>
-            </footer>
         </div>
-    </div>                            
+        <footer class="footer">
+            <div class="container">
+                <nav>
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="register.html">
+                                Sign Up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-center">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="#">National Human Rights Commision</a>, New Delhi , India.
+                    </p>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <!-- 
+
+
+
+
+
+
+<div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"> </i>
+        </a>
+
+        <ul class="dropdown-menu">
+			<li class="header-title"> Sidebar Style</li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Background Image</p>
+                    <label class="switch-image">
+                        <input type="checkbox" data-toggle="switch" checked="" data-on-color="info" data-off-color="info"><span class="toggle"></span>
+                    </label>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Sidebar Mini</p>
+                    <label class="switch-mini">
+                        <input type="checkbox" data-toggle="switch" data-on-color="info" data-off-color="info">
+                        <span class="toggle"></span>
+                    </label>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Fixed Navbar</p>
+                    <label class="switch-nav">
+                        <input type="checkbox" data-toggle="switch" data-on-color="info" data-off-color="info">
+                        <span class="toggle"></span>
+                    </label>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <p>Filters</p>
+                    <div class="pull-right">
+                        <span class="badge filter badge-black" data-color="black"></span>
+                        <span class="badge filter badge-azure" data-color="azure"></span>
+                        <span class="badge filter badge-green" data-color="green"></span>
+                        <span class="badge filter badge-orange active" data-color="orange"></span>
+                        <span class="badge filter badge-red" data-color="red"></span>
+                        <span class="badge filter badge-purple" data-color="purple"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="header-title">Sidebar Images</li>
+
+            <li class="active">
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="${pageContext.request.contextPath}/resources/img/sidebar-1.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="${pageContext.request.contextPath}/resources/img/sidebar-3.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="${pageContext.request.contextPath}/resources/img/sidebar-4.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="${pageContext.request.contextPath}/resources/img/sidebar-5.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="button-container">
+                <div>
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard" target="_blank" class="btn btn-info btn-block">Get free demo!</a>
+                </div>
+            </li>
+
+            <li class="button-container">
+                <div>
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank" class="btn btn-warning btn-block">Buy now!</a>
+                </div>
+            </li>
+
+            <li class="button-container">
+                <div>
+                    <a href="https://demos.creative-tim.com/light-bootstrap-dashboard-pro/documentation/tutorial-components.html" target="_blank" class="btn btn-danger btn-block">Documention</a>
+                </div>
+            </li>
+
+
+            <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
+
+            <li class="button-container">
+				<button id="twitter" class="btn btn-social btn-twitter btn-round twitter-sharrre"><i class="fa fa-twitter"></i> · 256</button>
+                <button id="facebook" class="btn btn-social btn-facebook btn-round facebook-sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
+            </li>
+        </ul>
+    </div>
+</div>
+ -->
 </body>
 <!--   Core JS Files   -->
-<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/core/popper.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/bootstrap-switch.js"></script>
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
 <!--  Chartist Plugin  -->
-<script src="../assets/js/plugins/chartist.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/chartist.min.js"></script>
 <!--  Notifications Plugin    -->
-<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/bootstrap-notify.js"></script>
 <!--  Share Plugin -->
-<script src="../assets/js/plugins/jquery.sharrre.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/jquery.sharrre.js"></script>
 <!--  jVector Map  -->
-<script src="../assets/js/plugins/jquery-jvectormap.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/jquery-jvectormap.js" type="text/javascript"></script>
 <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-<script src="../assets/js/plugins/moment.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/moment.min.js"></script>
 <!--  DatetimePicker   -->
-<script src="../assets/js/plugins/bootstrap-datetimepicker.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/bootstrap-datetimepicker.js"></script>
 <!--  Sweet Alert  -->
-<script src="../assets/js/plugins/sweetalert2.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/sweetalert2.min.js" type="text/javascript"></script>
 <!--  Tags Input  -->
-<script src="../assets/js/plugins/bootstrap-tagsinput.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/bootstrap-tagsinput.js" type="text/javascript"></script>
 <!--  Sliders  -->
-<script src="../assets/js/plugins/nouislider.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/nouislider.js" type="text/javascript"></script>
 <!--  Bootstrap Select  -->
-<script src="../assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
 <!--  jQueryValidate  -->
-<script src="../assets/js/plugins/jquery.validate.min.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/jquery.validate.min.js" type="text/javascript"></script>
 <!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
 <script src="${pageContext.request.contextPath}/resources/js/plugins/jquery.bootstrap-wizard.js"></script>
 <!--  Bootstrap Table Plugin -->
-<script src="../assets/js/plugins/bootstrap-table.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/bootstrap-table.js"></script>
 <!--  DataTable Plugin -->
-<script src="../assets/js/plugins/jquery.dataTables.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/jquery.dataTables.min.js"></script>
 <!--  Full Calendar   -->
-<script src="../assets/js/plugins/fullcalendar.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/plugins/fullcalendar.min.js"></script>
 <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.1" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/resources/js/light-bootstrap-dashboard.js?v=2.0.1" type="text/javascript"></script>
 <!-- Light Dashboard DEMO methods, don't include it in your project! -->
-<script src="../assets/js/demo.js"></script>
-<!--Js code for pagination-->
-<script src="../assets/js/plugins/SimplePaginationSpec.js"></script>
-<script src="../assets/js/plugins/SpecHelper.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/demo.js"></script>
+<script>
+    $(document).ready(function() {
+        demo.checkFullPageBackgroundImage();
 
-
+        setTimeout(function() {
+            // after 1000 ms we add the class animated to the login/register card
+            $('.card').removeClass('card-hidden');
+        }, 700)
+    });
+</script>
+<!-- Facebook Pixel Code Don't Delete -->
 <script>
     ! function(f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -504,5 +380,9 @@ pageEncoding="ISO-8859-1"%>
         console.log('Facebook Track Error:', err);
     }
 </script>
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
 
 </html>

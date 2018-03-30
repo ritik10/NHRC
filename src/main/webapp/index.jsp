@@ -37,7 +37,7 @@ pageEncoding="ISO-8859-1"%>
     <div class="wrapper">
         <div class="sidebar" data-color="orange" data-image="../assets/img/sidebar-4.jpg">
             <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+        Tip 1: You can change the colodasdr of the sidebar using: data-color="purple | blue | green | orange | red"
 
         Tip 2: you can also add an image using data-image tag
     -->

@@ -15,7 +15,7 @@ public class MainController {
 			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 		System.out.println("Hii in controller");
 		System.out.println("Hii hi in controller");
-		System.out.println("Done2");
+		System.out.println("Donec2");
 		ModelAndView mv = new ModelAndView("helloworld");
 		mv.addObject("message", message);
 		mv.addObject("name", name);
